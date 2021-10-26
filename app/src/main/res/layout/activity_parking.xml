@@ -1,135 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    tools:context=".MainActivity">
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/empty_parc_space">
 
-
-    <TextView
-        android:id="@+id/header_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Parking "
-        android:textColor="#F3F3F3"
-        android:textSize="50sp"
+    <Button
+        android:id="@+id/place1"
+        android:layout_width="42dp"
+        android:layout_height="225dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/green"
+        android:onClick="place1_clicked"
+        android:text="1"
+        android:textColor="@color/white2"
         android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/header_text"
-        android:orientation="vertical">
+    <Button
+        android:id="@+id/place2"
+        android:layout_width="42dp"
+        android:layout_height="225dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/place1"
+        android:layout_toRightOf="@+id/place1"
+        android:background="@color/green"
+        android:onClick="place2_clicked"
+        android:text="2"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+    <Button
+        android:id="@+id/place3"
+        android:layout_width="42dp"
+        android:layout_height="225dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/place2"
+        android:background="@color/red"
+        android:onClick="place3_clicked"
+        android:text="3"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/first"
-                android:layout_width="250dp"
-                android:layout_height="164dp"
-                android:layout_margin="6dp"
-                android:src="@drawable/ic_outline_directions_car_24"
-                android:tag="0"
-                android:textSize="60sp"
-                tools:text="0" />
+    <Button
+        android:id="@+id/place4"
+        android:layout_width="42dp"
+        android:layout_height="225dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/place3"
+        android:background="@color/green"
+        android:onClick="place4_clicked"
+        android:text="4"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/second"
-                android:layout_width="250dp"
-                android:layout_height="164dp"
-                android:layout_margin="6dp"
-                android:src="@drawable/ic_outline_directions_car_24"
-                android:tag="0"
-                android:textSize="40dp"
-                tools:text="0" />
-        </LinearLayout>
+    <Button
+        android:id="@+id/place5"
+        android:layout_width="42dp"
+        android:layout_height="225dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/place4"
+        android:background="@color/red"
+        android:onClick="place5_clicked"
+        android:text="5"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+    <Button
+        android:id="@+id/place6"
+        android:layout_width="42dp"
+        android:layout_height="225dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/place5"
+        android:background="@color/red"
+        android:onClick="place6_clicked"
+        android:text="6"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/one"
-                android:layout_width="250dp"
-                android:layout_height="164dp"
-                android:layout_margin="6dp"
-                android:src="@drawable/ic_outline_directions_car_24"
-                android:tag="0"
-                android:textSize="40dp"
-                tools:text="0" />
+    <Button
+        android:id="@+id/place7"
+        android:layout_width="42dp"
+        android:layout_height="225dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/place6"
+        android:layout_toRightOf="@+id/place6"
+        android:background="@color/red"
+        android:onClick="place7_clicked"
+        android:text="7"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/two"
-                android:layout_width="250dp"
-                android:layout_height="159dp"
-                android:layout_margin="6dp"
-                android:src="@drawable/ic_outline_directions_car_24"
-                android:tag="0"
-                android:textSize="40dp"
-                tools:text="0" />
-        </LinearLayout>
+    <Button
+        android:id="@+id/place8"
+        android:layout_width="42dp"
+        android:layout_height="225dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/place7"
+        android:background="@color/green"
+        android:onClick="place8_clicked"
+        android:text="8"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+    <Button
+        android:id="@+id/place9"
+        android:layout_width="42dp"
+        android:layout_height="225dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/place8"
+        android:background="@color/red"
+        android:onClick="place9_clicked"
+        android:text="9"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/trois"
-                android:layout_width="250dp"
-                android:layout_height="164dp"
-                android:layout_margin="6dp"
-                android:src="@drawable/ic_outline_directions_car_24"
-                android:tag="0"
-                android:textSize="40dp"
-                tools:text="0" />
+    <Button
+        android:id="@+id/place15"
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
+        android:layout_below="@+id/place7"
+        android:layout_marginLeft="5.8dp"
+        android:layout_marginTop="153dp"
+        android:background="@color/red"
+        android:onClick="place15_clicked"
+        android:text="15"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/quatre"
-                android:layout_width="250dp"
-                android:layout_height="164dp"
-                android:layout_margin="6dp"
-                android:src="@drawable/ic_outline_directions_car_24"
-                android:tag="0"
-                android:textSize="40dp"
-                tools:text="0" />
-        </LinearLayout>
+    <Button
+        android:id="@+id/place14"
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
+        android:layout_below="@+id/place15"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/green"
+        android:onClick="place14_clicked"
+        android:text="14"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+    <Button
+        android:id="@+id/place13"
+        android:layout_width="wrap_content"
+        android:layout_height="104dp"
+        android:layout_below="@+id/place14"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/red"
+        android:onClick="place13_clicked"
+        android:text="13"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/voiture"
-                android:layout_width="250dp"
-                android:layout_height="164dp"
-                android:layout_margin="6dp"
-                android:src="@drawable/ic_outline_directions_car_24"
-                android:tag="0"
-                android:textSize="40dp"
-                tools:text="0" />
+    <Button
+        android:id="@+id/place10"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_above="@+id/place14"
+        android:layout_alignTop="@+id/place15"
+        android:layout_marginStart="-4dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toEndOf="@+id/place7"
+        android:layout_toRightOf="@+id/place7"
+        android:background="@color/green"
+        android:onClick="place10_clicked"
+        android:text="10"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/car"
-                android:layout_width="250dp"
-                android:layout_height="164dp"
-                android:layout_margin="6dp"
-                android:src="@drawable/ic_outline_directions_car_24"
-                android:tag="0"
-                android:textSize="40dp"
-                tools:text="0" />
-        </LinearLayout>
-    </LinearLayout>
+    <Button
+        android:id="@+id/place11"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginTop="2dp"
+        android:layout_above="@+id/place13"
+        android:layout_alignLeft="@+id/place10"
+        android:layout_alignStart="@+id/place10"
+        android:layout_below="@+id/place10"
+        android:background="@color/green"
+        android:text="11"
+        android:textStyle="bold"
+        android:textColor="@color/white2"
+        android:onClick="place11_clicked"/>
+
+    <Button
+        android:id="@+id/place12"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_below="@+id/place11"
+        android:layout_alignStart="@+id/place11"
+
+        android:layout_alignLeft="@+id/place11"
+        android:layout_marginTop="2dp"
+        android:background="@color/red"
+        android:onClick="place12_clicked"
+        android:text="12"
+        android:textColor="@color/white2"
+        android:textStyle="bold" />
+
+
 </RelativeLayout>

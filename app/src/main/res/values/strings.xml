@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GestionParking</string>
+    <string name="number">number</string>
+    <string name="book_your_spot">Book your spot</string>
 </resources>

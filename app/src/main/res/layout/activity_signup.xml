@@ -21,7 +21,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/username"
+        android:id="@+id/Brand"
         android:layout_below="@id/signin"
         android:background="#30ffffff"
         android:hint="Username"
@@ -35,8 +35,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/email"
-        android:layout_below="@id/username"
+        android:id="@+id/Model"
+        android:layout_below="@id/Brand"
         android:background="#30ffffff"
         android:hint="Email"
         android:textColorHint="@color/white"
@@ -49,8 +49,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/password"
-        android:layout_below="@id/email"
+        android:id="@+id/Serie"
+        android:layout_below="@id/Model"
         android:background="#30ffffff"
         android:hint="Password"
         android:textColorHint="@color/white"
@@ -62,25 +62,28 @@
         android:inputType="textPassword"/>
 
     <EditText
+        android:id="@+id/Time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/confirmpassword"
-        android:layout_below="@id/password"
+        android:layout_below="@id/Serie"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="#30ffffff"
-        android:hint="Confirm Password"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"
-        android:layout_margin="10dp"
-        android:padding="20dp"
         android:drawableLeft="@drawable/ic_baseline_info_24"
         android:drawablePadding="20dp"
-        android:inputType="textPassword"/>
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/signup"
-        android:layout_below="@id/confirmpassword"
+        android:layout_below="@id/Time"
         android:text="SIGNUP"
         android:backgroundTint="@color/design_default_color_secondary"
         android:layout_centerHorizontal="true"

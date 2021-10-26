@@ -21,7 +21,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/username"
+        android:id="@+id/Brand"
         android:layout_below="@id/signin"
         android:background="#30ffffff"
         android:hint="Username"
@@ -35,8 +35,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/password"
-        android:layout_below="@id/username"
+        android:id="@+id/Serie"
+        android:layout_below="@id/Brand"
         android:background="#30ffffff"
         android:hint="Password"
         android:textColorHint="@color/white"
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/loginbtn"
-        android:layout_below="@id/password"
+        android:layout_below="@id/Serie"
         android:text="LOGIN"
         android:backgroundTint="@color/design_default_color_secondary"
         android:layout_centerHorizontal="true"

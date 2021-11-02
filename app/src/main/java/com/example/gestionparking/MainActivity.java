@@ -8,8 +8,7 @@ import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
-    AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-            AppDatabase.class, "parking").build();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         TextView signup;

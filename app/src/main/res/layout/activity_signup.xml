@@ -21,7 +21,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Brand"
+        android:id="@+id/TxtUserName"
         android:layout_below="@id/signin"
         android:background="#30ffffff"
         android:hint="Username"
@@ -35,8 +35,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Model"
-        android:layout_below="@id/Brand"
+        android:id="@+id/Txtemail"
+        android:layout_below="@id/TxtUserName"
         android:background="#30ffffff"
         android:hint="Email"
         android:textColorHint="@color/white"
@@ -49,8 +49,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/Serie"
-        android:layout_below="@id/Model"
+        android:id="@+id/TxtPassword"
+        android:layout_below="@id/Txtemail"
         android:background="#30ffffff"
         android:hint="Password"
         android:textColorHint="@color/white"
@@ -62,10 +62,10 @@
         android:inputType="textPassword"/>
 
     <EditText
-        android:id="@+id/Time"
+        android:id="@+id/TxtconfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Serie"
+        android:layout_below="@id/TxtPassword"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -82,8 +82,8 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signup"
-        android:layout_below="@id/Time"
+        android:id="@+id/Btnsignup"
+        android:layout_below="@id/TxtconfirmPassword"
         android:text="SIGNUP"
         android:backgroundTint="@color/design_default_color_secondary"
         android:layout_centerHorizontal="true"

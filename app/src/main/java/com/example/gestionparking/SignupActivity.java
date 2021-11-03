@@ -27,15 +27,16 @@ public class SignupActivity extends AppCompatActivity {
             if (userName.getText().toString().isEmpty() || email.getText().toString().isEmpty() || password.getText().toString().isEmpty()){
                 Toast.makeText(getApplicationContext(),"please fill all fields",Toast.LENGTH_SHORT).show();
             }else{
-                if (password.getText().toString() != passwordConfirm.getText().toString()){
-                    Toast.makeText(getApplicationContext(),"please confirm your password",Toast.LENGTH_SHORT).show();
-                }else{
+                if (password.getText().toString().equals(passwordConfirm.getText().toString()) ){
                     AppDatabase db  = AppDatabase.getDbInstance(this.getApplicationContext());
                     UserDao userDao = db.userDao();
                     userDao.insertUser(userName.getText().toString(),email.getText().toString(),password.getText().toString());
                     Toast.makeText(getApplicationContext(),"enregistred successflly",Toast.LENGTH_SHORT).show();
                     Intent intent=new Intent(SignupActivity.this,MainActivity.class);
                     startActivity(intent);
+                }else{
+                    Toast.makeText(getApplicationContext(),"please confirm your password",Toast.LENGTH_SHORT).show();
+
                 }
 
             }

@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "incorrect informations", Toast.LENGTH_SHORT).show();
             }else{
                     userConnected=user;
-                    Intent intent=new Intent(MainActivity.this,MapActivity.class);
+                    Intent intent=new Intent(MainActivity.this,MapsActivity.class);
                     startActivity(intent);
                 }
 

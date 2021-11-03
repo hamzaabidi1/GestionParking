@@ -9,7 +9,6 @@ import androidx.room.PrimaryKey;
 public class User {
     @PrimaryKey(autoGenerate = true)
     public int uid;
-
     @ColumnInfo(name = "user_name")
     public String userName;
     @ColumnInfo(name = "email")

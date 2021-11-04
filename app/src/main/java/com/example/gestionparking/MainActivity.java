@@ -1,7 +1,6 @@
 package com.example.gestionparking;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -12,23 +11,23 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     public static User userConnected;
+    private TextView signup;
+    private EditText email,password;
+    private Button login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        TextView signup;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         signup=findViewById(R.id.signintxt);
-        EditText email,password;
         password=findViewById(R.id.TxtPasswordSign);
         email=findViewById(R.id.TxtEmailSign);
-        Button loginbtn;
-        loginbtn=findViewById(R.id.loginbtn);
+        login=findViewById(R.id.loginbtn);
         signup.setOnClickListener(view -> {
             Intent intent=new Intent(MainActivity.this,SignupActivity.class);
             startActivity(intent);
         });
-        loginbtn.setOnClickListener(view -> {
+        login.setOnClickListener(view -> {
             if (email.getText().toString().isEmpty() || password.getText().toString().isEmpty()) {
                 Toast.makeText(getApplicationContext(), "please fill all fields", Toast.LENGTH_SHORT).show();
             }else

@@ -19,7 +19,7 @@ public interface UserDao {
     @Query("SELECT * FROM user WHERE email LIKE :email AND " +
             "password LIKE :password LIMIT 1")
     User findUser(String email, String password);
-    @Query("Insert into user values (1,:username ,:email,:password)")
+    @Query("Insert into user (user_name,email,password)values (:username ,:email,:password)")
     void insertUser(String username,String email,String password);
 
     @Insert

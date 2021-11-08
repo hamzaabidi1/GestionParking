@@ -43,11 +43,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng myLocation = new LatLng(36.721130, 10.215417);
+     /*   LatLng myLocation = new LatLng(36.721130, 10.215417);
         mMap.addMarker(new MarkerOptions()
                 .position(myLocation)
                 .title("My Location"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(myLocation));*/
 
         LatLng P1 = new LatLng(36.72333, 10.215519);
         mMap.addMarker(new MarkerOptions()
@@ -61,20 +61,22 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .title("Parking in El Mourouj")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 .position(new LatLng(36.721130, 10.215417));
-        mMap.addMarker(option1);
+     //   mMap.addMarker(option1);
         Marker M1= googleMap.addMarker(option1);
         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
             @Override
             public boolean onMarkerClick(Marker marker) {
                 if (marker.equals(M1)) {
-                    Intent i = new Intent(getBaseContext(), ParkingActivity.class);
-               /*     Bundle extras = new Bundle();
+                /*     Intent i = new Intent(getBaseContext(), ParkingActivity.class);
+                   Bundle extras = new Bundle();
                     extras.putString("EXTRA_MESSAGE", "those are User information's");
                     extras.putString("EXTRA_USER_CIN", cin_user);
                     extras.putString("EXTRA_POSITION_PARC_MAP",P1.getTitle());
 
-                    i.putExtras(extras);*/
-                    startActivity(i);
+                    i.putExtras(extras);
+                    startActivity(i);*/
+                    Intent intent=new Intent(MapsActivity.this,ParkingActivity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "please choose the parc", Toast.LENGTH_SHORT).show();
 

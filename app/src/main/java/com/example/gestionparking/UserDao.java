@@ -28,4 +28,8 @@ public interface UserDao {
     @Delete
     void delete(User user);
 
+    @Transaction
+    @Query("INSERT INTO Booking (carBrand,model,plateNumber,hours,timeOfBooking,userId) values (:carBrand,:model,:plateNumber,:hours,:timeOfBooking,:userId)")
+    void insertBooking(String carBrand,String model,String plateNumber,String hours,String timeOfBooking,int userId);
+
 }

@@ -16,4 +16,6 @@ public class User {
     @ColumnInfo(name = "password")
     public String password;
 
+
+
 }

@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-    public static User userConnected;
+    public static User userConnected = new User();
     private TextView signup;
     private EditText email,password;
     private Button login;
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         signup=findViewById(R.id.signintxt);
-        password=findViewById(R.id.TxtPasswordSign);
+        password=findViewById(R.id.Model);
         email=findViewById(R.id.TxtEmailSign);
         login=findViewById(R.id.loginbtn);
         signup.setOnClickListener(view -> {

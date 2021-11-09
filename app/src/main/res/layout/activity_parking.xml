@@ -9,7 +9,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="@drawable/empty_parc_space">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place1"
         android:layout_width="42dp"
         android:layout_height="225dp"
@@ -19,9 +19,10 @@
         android:onClick="place1_clicked"
         android:text="1"
         android:textColor="@color/white2"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place2"
         android:layout_width="42dp"
         android:layout_height="225dp"
@@ -35,9 +36,9 @@
         android:onClick="place2_clicked"
         android:text="2"
         android:textColor="@color/white2"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place3"
         android:layout_width="42dp"
         android:layout_height="225dp"
@@ -50,7 +51,7 @@
         android:textColor="@color/white2"
         android:textStyle="bold" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place4"
         android:layout_width="42dp"
         android:layout_height="225dp"
@@ -61,9 +62,9 @@
         android:onClick="place4_clicked"
         android:text="4"
         android:textColor="@color/white2"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place5"
         android:layout_width="42dp"
         android:layout_height="225dp"
@@ -76,7 +77,7 @@
         android:textColor="@color/white2"
         android:textStyle="bold" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place6"
         android:layout_width="42dp"
         android:layout_height="225dp"
@@ -87,9 +88,9 @@
         android:onClick="place6_clicked"
         android:text="6"
         android:textColor="@color/white2"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place7"
         android:layout_width="42dp"
         android:layout_height="225dp"
@@ -103,9 +104,9 @@
         android:onClick="place7_clicked"
         android:text="7"
         android:textColor="@color/white2"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place8"
         android:layout_width="42dp"
         android:layout_height="225dp"
@@ -116,9 +117,9 @@
         android:onClick="place8_clicked"
         android:text="8"
         android:textColor="@color/white2"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place9"
         android:layout_width="42dp"
         android:layout_height="225dp"
@@ -129,9 +130,9 @@
         android:onClick="place9_clicked"
         android:text="9"
         android:textColor="@color/white2"
-        android:textStyle="bold" />
+        android:textStyle="bold"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place15"
         android:layout_width="wrap_content"
         android:layout_height="104dp"
@@ -139,12 +140,13 @@
         android:layout_marginLeft="5.8dp"
         android:layout_marginTop="153dp"
         android:background="@color/red"
+        android:backgroundTint="@color/red"
         android:onClick="place15_clicked"
         android:text="15"
         android:textColor="@color/white2"
         android:textStyle="bold" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place14"
         android:layout_width="wrap_content"
         android:layout_height="104dp"
@@ -155,12 +157,13 @@
         android:layout_marginLeft="5dp"
         android:layout_marginTop="7dp"
         android:background="@color/green"
+        android:backgroundTint="@color/green"
         android:onClick="place14_clicked"
         android:text="14"
         android:textColor="@color/white2"
         android:textStyle="bold" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place13"
         android:layout_width="wrap_content"
         android:layout_height="104dp"
@@ -174,9 +177,10 @@
         android:onClick="place13_clicked"
         android:text="13"
         android:textColor="@color/white2"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:backgroundTint="@color/red"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place10"
         android:layout_width="wrap_content"
         android:layout_height="110dp"
@@ -192,9 +196,10 @@
         android:onClick="place10_clicked"
         android:text="10"
         android:textColor="@color/white2"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:backgroundTint="@color/green"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place11"
         android:layout_width="wrap_content"
         android:layout_height="110dp"
@@ -207,22 +212,23 @@
         android:text="11"
         android:textStyle="bold"
         android:textColor="@color/white2"
-        android:onClick="place11_clicked"/>
+        android:onClick="place11_clicked"
+        android:backgroundTint="@color/green"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/place12"
         android:layout_width="wrap_content"
         android:layout_height="105dp"
         android:layout_below="@+id/place11"
         android:layout_alignStart="@+id/place11"
-
         android:layout_alignLeft="@+id/place11"
         android:layout_marginTop="2dp"
         android:background="@color/red"
         android:onClick="place12_clicked"
         android:text="12"
         android:textColor="@color/white2"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:backgroundTint="@color/red"/>
 
 
 </RelativeLayout>

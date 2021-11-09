@@ -144,7 +144,7 @@ public class ParkingActivity extends AppCompatActivity {
                 Intent i = new Intent(ParkingActivity.this, BookingActivity.class);
                 startActivity(i);
             }
-            if (bt15.getBackground().equals("@color/red")){
+            if (bt10.getBackground().equals("@color/red")){
                 Toast.makeText(getApplicationContext(),"cet endroit est réservé",Toast.LENGTH_LONG).show();
             }
         }
@@ -153,7 +153,7 @@ public class ParkingActivity extends AppCompatActivity {
                 Intent i = new Intent(ParkingActivity.this, BookingActivity.class);
                 startActivity(i);
             }
-            if (bt15.getBackground().equals("@color/red")){
+            if (bt11.getBackground().equals("@color/red")){
                 Toast.makeText(getApplicationContext(),"cet endroit est réservé",Toast.LENGTH_LONG).show();
             }
         }
@@ -162,7 +162,7 @@ public class ParkingActivity extends AppCompatActivity {
                 Intent i = new Intent(ParkingActivity.this, BookingActivity.class);
                 startActivity(i);
             }
-            if (bt15.getBackground().equals("@color/red")){
+            if (bt12.getBackground().equals("@color/red")){
                 Toast.makeText(getApplicationContext(),"cet endroit est réservé",Toast.LENGTH_LONG).show();
             }
         }
@@ -171,7 +171,7 @@ public class ParkingActivity extends AppCompatActivity {
                 Intent i = new Intent(ParkingActivity.this, BookingActivity.class);
                 startActivity(i);
             }
-            if (bt15.getBackground().equals("@color/red")){
+            if (bt13.getBackground().equals("@color/red")){
                 Toast.makeText(getApplicationContext(),"cet endroit est réservé",Toast.LENGTH_LONG).show();
             }
         }
@@ -180,7 +180,7 @@ public class ParkingActivity extends AppCompatActivity {
                 Intent i = new Intent(ParkingActivity.this, BookingActivity.class);
                 startActivity(i);
             }
-            if (bt15.getBackground().equals("@color/red")){
+            if (bt14.getBackground().equals("@color/red")){
                 Toast.makeText(getApplicationContext(),"cet endroit est réservé",Toast.LENGTH_LONG).show();
             }
         }

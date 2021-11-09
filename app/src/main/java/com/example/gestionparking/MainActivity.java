@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         signup=findViewById(R.id.signintxt);
-        password=findViewById(R.id.Model);
+        password=findViewById(R.id.TxtPasswordSign);
         email=findViewById(R.id.TxtEmailSign);
         login=findViewById(R.id.loginbtn);
         signup.setOnClickListener(view -> {

@@ -105,16 +105,20 @@
 
 
         <ImageView
+            android:id="@+id/GoogleSignIn"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="20dp"
-            android:src="@drawable/google"/>
+            android:src="@drawable/google" />
+
         <ImageView
+            android:id="@+id/FaceBookSignIn"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="20dp"
             android:src="@drawable/fb"/>
         <ImageView
+            android:id="@+id/TwitterSignIn"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_margin="20dp"

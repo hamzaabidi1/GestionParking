@@ -2,4 +2,6 @@
     <string name="app_name">GestionParking</string>
     <string name="number">number</string>
     <string name="book_your_spot">Book your spot</string>
+    <string name="facebook_app_id">488054718986888</string> <string name="fb_login_protocol_scheme">fb488054718986888</string>
+
 </resources>

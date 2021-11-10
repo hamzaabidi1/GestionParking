@@ -5,8 +5,13 @@ package com.example.gestionparking;
 import static com.example.gestionparking.MainActivity.userConnected;
 import static com.example.gestionparking.ParkingActivity.bt1;
 import static com.example.gestionparking.ParkingActivity.parkingSelected;
+
+import androidx.annotation.ColorRes;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,9 +43,8 @@ public class BookingActivity extends AppCompatActivity {
                 userDao.insertBooking(brand.getText().toString(),model.getText().toString(),plateNumber.getText().toString(),hours.getText().toString(),formater.format(today), userConnected.uid);
                 Toast.makeText(getApplicationContext(), "booking Succeed for "+hours.getText().toString()+" hours", Toast.LENGTH_SHORT).show();
                 if (bt1 == parkingSelected){
-                    bt1.setBackgroundColor(getResources().getColor(R.color.red));
-                    bt1.setBackgroundColor(bt1.getContext().getResources().getColor(R.color.red));
-                    bt1.setBackgroundColor(0xFFFF0000);
+                    bt1.setBackgroundColor(Color.RED);
+
                 }
                 Intent intent=new Intent(BookingActivity.this,MapsActivity.class);
                 startActivity(intent);
